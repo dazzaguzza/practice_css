@@ -1,0 +1,116 @@
+@import url('./waxom_common.css');
+
+/* HEADER */
+header{
+    position:fixed;
+    left:0;
+    right:0;
+    z-index:999;  
+    padding:40px 0; 
+}
+header .logo{
+    float:left;
+}
+header .logo a{
+    width:171px;
+    height:56px;
+    background:url('./images/logo-white.png') no-repeat;
+    display:block;
+    text-indent: -9999em;
+}
+header nav{
+    float:right;
+}
+header nav ul{
+ float:left;  
+}
+header nav ul li{
+    float:left;  
+   }
+header nav ul li a{
+    line-height: 56px;
+    font-size:14px;
+    color:#fff;
+    text-decoration: none;
+}
+.main_menu li{
+    margin-right:29px;
+}
+.main_menu li:last-child{
+    margin-right:60px;
+}
+.top-icons li{
+    margin-right:29px;
+}
+.top-icons li:last-child{
+    margin-right:0;
+}
+header nav ul li a:hover, header nav ul li a.active{
+    color:#c7b299;
+}
+.slider{
+    height:1024px;
+}
+.slider-list li{
+    position:relative;
+}
+.slider-list li .contents{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#fff;
+  width:595px;
+}   
+.slider-list li .contents h3{font-size:36px; font-family:"Raleway",sans-serif;font-weight: 500;
+line-height: 1.1;}
+.slider-list li .contents h2{font-family:"Raleway",sans-serif; font-size:52px; font-weight:800;
+    line-height: 1.3;}
+.slider-list li .contents p{width:98%;margin-bottom: 49px;}
+
+.slider-list li{
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height:1024px; */
+    text-align: center;
+    background-position: center top;
+}
+
+.slider-list li.slide1{
+    background-image: url('./images/mainslide_01.jpg');
+}
+.slider-list li.slide2{
+    background-image: url('./images/mainslide_02.jpg');
+}
+.slider-list li.slide3{
+    background-image: url('./images/mainslide_03.jpg');
+}
+.slider .controls a{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background:url(./images/sprites.png);
+    width:40px;
+    height:73px;
+    text-indent: -9999em;
+}
+.slider .controls a.prev {
+    background-position: 0 -77px;
+    margin-left:-789px;
+}
+.slider .controls a.next {
+    background-position: -40px -77px;
+    margin-left:789px;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform:translate(-50%,-50%);
+} 
+.slick-dots li {display: inline-block;margin-left: 4px; margin-right: 4px;} 
+.slick-dots li.slick-active button {border:2px solid #d3c1ad; background:none;} 
+.slick-dots li button {width:15px; height:15px; background-color:rgba(255,255,255,.5); border:2px solid transparent; border-radius: 50%; text-indent: -9999em; background-clip: padding-box;} 
+
+
